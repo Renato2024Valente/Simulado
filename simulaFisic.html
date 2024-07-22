@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado de Física</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin: 0;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulado de Física</h1>
+    
+    <form id="quizForm">
+        <!-- Questão 1 -->
+        <div class="question">
+            <p>1. Qual é a unidade de medida da quantidade de movimento?</p>
+            <label><input type="radio" name="q1" value="a"> A. Joule</label><br>
+            <label><input type="radio" name="q1" value="b"> B. Newton</label><br>
+            <label><input type="radio" name="q1" value="c"> C. Pascal</label><br>
+            <label><input type="radio" name="q1" value="d"> D. Kilograma metro por segundo (kg m/s)</label><br>
+            <label><input type="radio" name="q1" value="e"> E. Watt</label><br>
+            <div class="answer" id="a1">
+                <p><strong>Resposta correta:</strong> D</p>
+                <p>A quantidade de movimento (ou momento linear) é medida em kg m/s.</p>
+            </div>
+        </div>
+
+        <!-- Questão 2 -->
+        <div class="question">
+            <p>2. O que é impulso em mecânica?</p>
+            <label><input type="radio" name="q2" value="a"> A. A variação da força</label><br>
+            <label><input type="radio" name="q2" value="b"> B. A força aplicada por unidade de tempo</label><br>
+            <label><input type="radio" name="q2" value="c"> C. O produto da força pelo tempo durante o qual ela atua</label><br>
+            <label><input type="radio" name="q2" value="d"> D. A velocidade multiplicada pela massa</label><br>
+            <label><input type="radio" name="q2" value="e"> E. A variação da energia cinética</label><br>
+            <div class="answer" id="a2">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>Impulso é o produto da força pelo tempo durante o qual ela atua.</p>
+            </div>
+        </div>
+
+        <!-- Questão 3 -->
+        <div class="question">
+            <p>3. Qual é a fórmula para a conservação da quantidade de movimento em um sistema isolado?</p>
+            <label><input type="radio" name="q3" value="a"> A. \( F = ma \)</label><br>
+            <label><input type="radio" name="q3" value="b"> B. \( p = mv \)</label><br>
+            <label><input type="radio" name="q3" value="c"> C. \( p_i = p_f \)</label><br>
+            <label><input type="radio" name="q3" value="d"> D. \( E = mc^2 \)</label><br>
+            <label><input type="radio" name="q3" value="e"> E. \( F \cdot d = \Delta E \)</label><br>
+            <div class="answer" id="a3">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>Em um sistema isolado, a quantidade de movimento inicial (p_i) é igual à quantidade de movimento final (p_f).</p>
+            </div>
+        </div>
+
+        <!-- Questão 4 -->
+        <div class="question">
+            <p>4. Qual é a expressão correta para a força centrípeta?</p>
+            <label><input type="radio" name="q4" value="a"> A. \( F = ma \)</label><br>
+            <label><input type="radio" name="q4" value="b"> B. \( F = \frac{mv^2}{r} \)</label><br>
+            <label><input type="radio" name="q4" value="c"> C. \( F = mg \)</label><br>
+            <label><input type="radio" name="q4" value="d"> D. \( F = \frac{1}{2}mv^2 \)</label><br>
+            <label><input type="radio" name="q4" value="e"> E. \( F = \frac{p}{t} \)</label><br>
+            <div class="answer" id="a4">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>A força centrípeta é dada por \( F = \frac{mv^2}{r} \).</p>
+            </div>
+        </div>
+
+        <!-- Questão 5 -->
+        <div class="question">
+            <p>5. Em termos de vetores, como se define a força?</p>
+            <label><input type="radio" name="q5" value="a"> A. Uma quantidade escalar</label><br>
+            <label><input type="radio" name="q5" value="b"> B. Uma quantidade vetorial com direção e magnitude</label><br>
+            <label><input type="radio" name="q5" value="c"> C. Uma quantidade que não tem unidade</label><br>
+            <label><input type="radio" name="q5" value="d"> D. Apenas a magnitude do empuxo</label><br>
+            <label><input type="radio" name="q5" value="e"> E. Apenas a direção do movimento</label><br>
+            <div class="answer" id="a5">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Força é uma quantidade vetorial, o que significa que possui direção e magnitude.</p>
+            </div>
+        </div>
+
+        <!-- Questão 6 -->
+        <div class="question">
+            <p>6. O que mede um termômetro?</p>
+            <label><input type="radio" name="q6" value="a"> A. Pressão</label><br>
+            <label><input type="radio" name="q6" value="b"> B. Temperatura</label><br>
+            <label><input type="radio" name="q6" value="c"> C. Volume</label><br>
+            <label><input type="radio" name="q6" value="d"> D. Massa</label><br>
+            <label><input type="radio" name="q6" value="e"> E. Força</label><br>
+            <div class="answer" id="a6">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Um termômetro mede a temperatura.</p>
+            </div>
+        </div>
+
+        <!-- Questão 7 -->
+        <div class="question">
+            <p>7. Qual é a equação da dilatação térmica linear?</p>
+            <label><input type="radio" name="q7" value="a"> A. \( \Delta L = \alpha L_0 \Delta T \)</label><br>
+            <label><input type="radio" name="q7" value="b"> B. \( \Delta V = \beta V_0 \Delta T \)</label><br>
+            <label><input type="radio" name="q7" value="c"> C. \( \Delta E = mc^2 \)</label><br>
+            <label><input type="radio" name="q7" value="d"> D. \( Q = mc \Delta T \)</label><br>
+            <label><input type="radio" name="q7" value="e"> E. \( P = F/A \)</label><br>
+            <div class="answer" id="a7">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>A equação da dilatação térmica linear é \( \Delta L = \alpha L_0 \Delta T \), onde \( \alpha \) é o coeficiente de dilatação linear.</p>
+            </div>
+        </div>
+
+        <!-- Questão 8 -->
+        <div class="question">
+            <p>8. O que é calor específico?</p>
+            <label><input type="radio" name="q8" value="a"> A. A quantidade de calor necessária para mudar a temperatura de 1 grama de uma substância em 1 grau Celsius</label><br>
+            <label><input type="radio" name="q8" value="b"> B. A quantidade de calor necessária para mudar a temperatura de 1 mol de uma substância em 1 grau Celsius</label><br>
+            <label><input type="radio" name="q8" value="c"> C. A quantidade de calor necessária para derreter 1 grama de uma substância</label><br>
+            <label><input type="radio" name="q8" value="d"> D. A quantidade de calor necessária para mudar a temperatura de 1 litro de água em 1 grau Celsius</label><br>
+            <label><input type="radio" name="q8" value="e"> E. A quantidade de calor necessária para ferver 1 grama de água</label><br>
+            <div class="answer" id="a8">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>Calor específico é a quantidade de calor necessária para mudar a temperatura de 1 grama de uma substância em 1 grau Celsius.</p>
+            </div>
+        </div>
+
+        <!-- Questão 9 -->
+        <div class="question">
+            <p>9. Qual é o processo de transferência de calor por meio de ondas eletromagnéticas?</p>
+            <label><input type="radio" name="q9" value="a"> A. Convecção</label><br>
+            <label><input type="radio" name="q9" value="b"> B. Condução</label><br>
+            <label><input type="radio" name="q9" value="c"> C. Radiação</label><br>
+            <label><input type="radio" name="q9" value="d"> D. Sublimação</label><br>
+            <label><input type="radio" name="q9" value="e"> E. Evaporação</label><br>
+            <div class="answer" id="a9">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>Radiação é a transferência de calor por meio de ondas eletromagnéticas.</p>
+            </div>
+        </div>
+
+        <!-- Questão 10 -->
+        <div class="question">
+            <p>10. Qual é a lei fundamental da termodinâmica?</p>
+            <label><input type="radio" name="q10" value="a"> A. Lei de Boyle</label><br>
+            <label><input type="radio" name="q10" value="b"> B. Lei de Hooke</label><br>
+            <label><input type="radio" name="q10" value="c"> C. Lei de Ohm</label><br>
+            <label><input type="radio" name="q10" value="d"> D. Primeira Lei da Termodinâmica</label><br>
+            <label><input type="radio" name="q10" value="e"> E. Lei de Coulomb</label><br>
+            <div class="answer" id="a10">
+                <p><strong>Resposta correta:</strong> D</p>
+                <p>A Primeira Lei da Termodinâmica estabelece a conservação de energia: a variação da energia interna de um sistema é igual ao calor trocado com a vizinhança menos o trabalho realizado pelo sistema.</p>
+            </div>
+        </div>
+
+        <!-- Questão 11 -->
+        <div class="question">
+            <p>11. O que é efeito fotoelétrico?</p>
+            <label><input type="radio" name="q11" value="a"> A. Emissão de luz por materiais aquecidos</label><br>
+            <label><input type="radio" name="q11" value="b"> B. Emissão de elétrons por materiais quando expostos à luz</label><br>
+            <label><input type="radio" name="q11" value="c"> C. Reflexão de luz em superfícies metálicas</label><br>
+            <label><input type="radio" name="q11" value="d"> D. Absorção de luz por materiais</label><br>
+            <label><input type="radio" name="q11" value="e"> E. Refração de luz em prismas</label><br>
+            <div class="answer" id="a11">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>O efeito fotoelétrico é a emissão de elétrons por materiais quando expostos à luz.</p>
+            </div>
+        </div>
+
+        <!-- Questão 12 -->
+        <div class="question">
+            <p>12. Qual é a unidade de resistência elétrica?</p>
+            <label><input type="radio" name="q12" value="a"> A. Volt</label><br>
+            <label><input type="radio" name="q12" value="b"> B. Ampere</label><br>
+            <label><input type="radio" name="q12" value="c"> C. Ohm</label><br>
+            <label><input type="radio" name="q12" value="d"> D. Watt</label><br>
+            <label><input type="radio" name="q12" value="e"> E. Coulomb</label><br>
+            <div class="answer" id="a12">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>A unidade de resistência elétrica é o Ohm.</p>
+            </div>
+        </div>
+
+        <!-- Questão 13 -->
+        <div class="question">
+            <p>13. O que é campo elétrico?</p>
+            <label><input type="radio" name="q13" value="a"> A. A região ao redor de um ímã onde ele exerce força magnética</label><br>
+            <label><input type="radio" name="q13" value="b"> B. A região ao redor de uma carga onde ela exerce força elétrica</label><br>
+            <label><input type="radio" name="q13" value="c"> C. A região ao redor de um resistor onde há dissipação de energia</label><br>
+            <label><input type="radio" name="q13" value="d"> D. A região ao redor de uma corrente onde há geração de calor</label><br>
+            <label><input type="radio" name="q13" value="e"> E. A região ao redor de um condutor onde há indução eletromagnética</label><br>
+            <div class="answer" id="a13">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Um campo elétrico é a região ao redor de uma carga onde ela exerce uma força elétrica.</p>
+            </div>
+        </div>
+
+        <!-- Questão 14 -->
+        <div class="question">
+            <p>14. Qual é a relação entre a corrente elétrica (I), a tensão (V) e a resistência (R) em um circuito?</p>
+            <label><input type="radio" name="q14" value="a"> A. \( V = IR \)</label><br>
+            <label><input type="radio" name="q14" value="b"> B. \( I = VR \)</label><br>
+            <label><input type="radio" name="q14" value="c"> C. \( R = VI \)</label><br>
+            <label><input type="radio" name="q14" value="d"> D. \( V = \frac{I}{R} \)</label><br>
+            <label><input type="radio" name="q14" value="e"> E. \( I = \frac{R}{V} \)</label><br>
+            <div class="answer" id="a14">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>A relação é dada pela Lei de Ohm: \( V = IR \).</p>
+            </div>
+        </div>
+
+        <!-- Questão 15 -->
+        <div class="question">
+            <p>15. Qual é a definição de pressão em um fluido?</p>
+            <label><input type="radio" name="q15" value="a"> A. A força total exercida sobre uma superfície</label><br>
+            <label><input type="radio" name="q15" value="b"> B. A força por unidade de área</label><br>
+            <label><input type="radio" name="q15" value="c"> C. A densidade do fluido</label><br>
+            <label><input type="radio" name="q15" value="d"> D. O volume total do fluido</label><br>
+            <label><input type="radio" name="q15" value="e"> E. A velocidade do fluido</label><br>
+            <div class="answer" id="a15">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Pressão é a força exercida por unidade de área.</p>
+            </div>
+        </div>
+
+        <!-- Questão 16 -->
+        <div class="question">
+            <p>16. O que diz o princípio de Pascal?</p>
+            <label><input type="radio" name="q16" value="a"> A. A pressão aplicada a um fluido incompressível é transmitida igualmente em todas as direções</label><br>
+            <label><input type="radio" name="q16" value="b"> B. A força em um fluido é proporcional ao volume do fluido</label><br>
+            <label><input type="radio" name="q16" value="c"> C. A pressão em um fluido diminui com a altura</label><br>
+            <label><input type="radio" name="q16" value="d"> D. A pressão em um fluido é constante ao longo de uma superfície</label><br>
+            <label><input type="radio" name="q16" value="e"> E. A densidade de um fluido é inversamente proporcional à pressão</label><br>
+            <div class="answer" id="a16">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>O princípio de Pascal afirma que a pressão aplicada a um fluido incompressível é transmitida igualmente em todas as direções.</p>
+            </div>
+        </div>
+
+        <!-- Questão 17 -->
+        <div class="question">
+            <p>17. O que é índice de refração?</p>
+            <label><input type="radio" name="q17" value="a"> A. A razão entre a velocidade da luz no vácuo e a velocidade da luz no material</label><br>
+            <label><input type="radio" name="q17" value="b"> B. A quantidade de luz refletida por uma superfície</label><br>
+            <label><input type="radio" name="q17" value="c"> C. A quantidade de luz absorvida por um material</label><br>
+            <label><input type="radio" name="q17" value="d"> D. A velocidade da luz em um material</label><br>
+            <label><input type="radio" name="q17" value="e"> E. A diferença de fase entre duas ondas luminosas</label><br>
+            <div class="answer" id="a17">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>O índice de refração é a razão entre a velocidade da luz no vácuo e a velocidade da luz no material.</p>
+            </div>
+        </div>
+
+        <!-- Questão 18 -->
+        <div class="question">
+            <p>18. O que é radiação ionizante?</p>
+            <label><input type="radio" name="q18" value="a"> A. Radiação que tem energia suficiente para ionizar átomos</label><br>
+            <label><input type="radio" name="q18" value="b"> B. Radiação que aquece materiais</label><br>
+            <label><input type="radio" name="q18" value="c"> C. Radiação que ilumina superfícies</label><br>
+            <label><input type="radio" name="q18" value="d"> D. Radiação que resfria materiais</label><br>
+            <label><input type="radio" name="q18" value="e"> E. Radiação que reflete em espelhos</label><br>
+            <div class="answer" id="a18">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>Radiação ionizante é aquela que tem energia suficiente para ionizar átomos.</p>
+            </div>
+        </div>
+
+        <!-- Questão 19 -->
+        <div class="question">
+            <p>19. Qual é a equação de Einstein que relaciona energia e massa?</p>
+            <label><input type="radio" name="q19" value="a"> A. \( E = \frac{1}{2}mv^2 \)</label><br>
+            <label><input type="radio" name="q19" value="b"> B. \( E = mc^2 \)</label><br>
+            <label><input type="radio" name="q19" value="c"> C. \( E = hf \)</label><br>
+            <label><input type="radio" name="q19" value="d"> D. \( E = qV \)</label><br>
+            <label><input type="radio" name="q19" value="e"> E. \( E = Fd \)</label><br>
+            <div class="answer" id="a19">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>A famosa equação de Einstein que relaciona energia e massa é \( E = mc^2 \).</p>
+            </div>
+        </div>
+
+        <!-- Questão 20 -->
+        <div class="question">
+            <p>20. O que é um isótopo?</p>
+            <label><input type="radio" name="q20" value="a"> A. Átomos com o mesmo número de prótons e diferentes números de nêutrons</label><br>
+            <label><input type="radio" name="q20" value="b"> B. Átomos com o mesmo número de nêutrons e diferentes números de prótons</label><br>
+            <label><input type="radio" name="q20" value="c"> C. Átomos com o mesmo número de elétrons e diferentes números de nêutrons</label><br>
+            <label><input type="radio" name="q20" value="d"> D. Átomos com diferentes números de elétrons e prótons</label><br>
+            <label><input type="radio" name="q20" value="e"> E. Átomos com o mesmo número de prótons e elétrons</label><br>
+            <div class="answer" id="a20">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>Isótopos são átomos que possuem o mesmo número de prótons, mas diferentes números de nêutrons.</p>
+            </div>
+        </div>
+
+        <button type="button" onclick="checkResults()">Enviar</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+        <h2>Resultados</h2>
+        <p>Pontuação: <span id="score"></span></p>
+        <p>Respostas corretas:</p>
+        <ul id="correctAnswers"></ul>
+    </div>
+
+    <script>
+        function checkResults() {
+            var form = document.getElementById('quizForm');
+            var score = 0;
+            var correctAnswers = [
+                { q: 1, a: 'd' },
+                { q: 2, a: 'c' },
+                { q: 3, a: 'c' },
+                { q: 4, a: 'b' },
+                { q: 5, a: 'b' },
+                { q: 6, a: 'b' },
+                { q: 7, a: 'a' },
+                { q: 8, a: 'a' },
+                { q: 9, a: 'c' },
+                { q: 10, a: 'd' },
+                { q: 11, a: 'b' },
+                { q: 12, a: 'c' },
+                { q: 13, a: 'b' },
+                { q: 14, a: 'a' },
+                { q: 15, a: 'b' },
+                { q: 16, a: 'a' },
+                { q: 17, a: 'a' },
+                { q: 18, a: 'a' },
+                { q: 19, a: 'b' },
+                { q: 20, a: 'a' }
+            ];
+            correctAnswers.forEach(function(answer) {
+                var question = 'q' + answer.q;
+                var selected = form.elements[question].value;
+                if (selected === answer.a) {
+                    score++;
+                }
+                document.getElementById('a' + answer.q).style.display = 'block';
+            });
+
+            document.getElementById('score').textContent = score + '/' + correctAnswers.length;
+            var correctAnswersList = document.getElementById('correctAnswers');
+            correctAnswersList.innerHTML = '';
+            correctAnswers.forEach(function(answer) {
+                var li = document.createElement('li');
+                li.textContent = 'Questão ' + answer.q + ': ' + answer.a.toUpperCase();
+                correctAnswersList.appendChild(li);
+            });
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

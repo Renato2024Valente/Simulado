@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado de Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin: 0;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulado de Matemática</h1>
+    
+    <form id="quizForm">
+        <!-- Questão 1 -->
+        <div class="question">
+            <p>1. Qual é a probabilidade de obter uma face par ao lançar um dado comum?</p>
+            <label><input type="radio" name="q1" value="a"> A. 1/6</label><br>
+            <label><input type="radio" name="q1" value="b"> B. 1/3</label><br>
+            <label><input type="radio" name="q1" value="c"> C. 1/2</label><br>
+            <label><input type="radio" name="q1" value="d"> D. 2/3</label><br>
+            <label><input type="radio" name="q1" value="e"> E. 5/6</label><br>
+            <div class="answer" id="a1">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>Um dado tem 6 faces, e 3 delas são pares (2, 4, 6). Portanto, a probabilidade é 3/6 = 1/2.</p>
+            </div>
+        </div>
+
+        <!-- Questão 2 -->
+        <div class="question">
+            <p>2. Se um evento A tem uma probabilidade de 0,4 e um evento B tem uma probabilidade de 0,5, qual é a probabilidade de ambos os eventos ocorrerem, supondo que sejam independentes?</p>
+            <label><input type="radio" name="q2" value="a"> A. 0,1</label><br>
+            <label><input type="radio" name="q2" value="b"> B. 0,2</label><br>
+            <label><input type="radio" name="q2" value="c"> C. 0,4</label><br>
+            <label><input type="radio" name="q2" value="d"> D. 0,5</label><br>
+            <label><input type="radio" name="q2" value="e"> E. 0,9</label><br>
+            <div class="answer" id="a2">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Para eventos independentes, a probabilidade de ambos ocorrerem é o produto das probabilidades individuais: 0,4 * 0,5 = 0,2.</p>
+            </div>
+        </div>
+
+        <!-- Questão 3 -->
+        <div class="question">
+            <p>3. Qual é o valor da expressão combinatória C(5, 3)?</p>
+            <label><input type="radio" name="q3" value="a"> A. 10</label><br>
+            <label><input type="radio" name="q3" value="b"> B. 20</label><br>
+            <label><input type="radio" name="q3" value="c"> C. 30</label><br>
+            <label><input type="radio" name="q3" value="d"> D. 40</label><br>
+            <label><input type="radio" name="q3" value="e"> E. 50</label><br>
+            <div class="answer" id="a3">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>C(5, 3) = 5! / (3! * (5 - 3)!) = 120 / (6 * 2) = 10.</p>
+            </div>
+        </div>
+
+        <!-- Questão 4 -->
+        <div class="question">
+            <p>4. Qual é a média dos números 3, 7, 10, 15 e 20?</p>
+            <label><input type="radio" name="q4" value="a"> A. 10</label><br>
+            <label><input type="radio" name="q4" value="b"> B. 11</label><br>
+            <label><input type="radio" name="q4" value="c"> C. 12</label><br>
+            <label><input type="radio" name="q4" value="d"> D. 13</label><br>
+            <label><input type="radio" name="q4" value="e"> E. 14</label><br>
+            <div class="answer" id="a4">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>A média é calculada somando todos os números e dividindo pelo número de elementos: (3 + 7 + 10 + 15 + 20) / 5 = 55 / 5 = 11.</p>
+            </div>
+        </div>
+
+        <!-- Questão 5 -->
+        <div class="question">
+            <p>5. Qual é a solução da equação \(2x + 5 = 13\)?</p>
+            <label><input type="radio" name="q5" value="a"> A. 4</label><br>
+            <label><input type="radio" name="q5" value="b"> B. 3</label><br>
+            <label><input type="radio" name="q5" value="c"> C. 2</label><br>
+            <label><input type="radio" name="q5" value="d"> D. 1</label><br>
+            <label><input type="radio" name="q5" value="e"> E. 0</label><br>
+            <div class="answer" id="a5">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Para resolver \(2x + 5 = 13\), subtraímos 5 de ambos os lados, resultando em \(2x = 8\). Dividindo ambos os lados por 2, temos \(x = 4\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 6 -->
+        <div class="question">
+            <p>6. Qual é a soma dos ângulos internos de um triângulo?</p>
+            <label><input type="radio" name="q6" value="a"> A. 90°</label><br>
+            <label><input type="radio" name="q6" value="b"> B. 180°</label><br>
+            <label><input type="radio" name="q6" value="c"> C. 270°</label><br>
+            <label><input type="radio" name="q6" value="d"> D. 360°</label><br>
+            <label><input type="radio" name="q6" value="e"> E. 450°</label><br>
+            <div class="answer" id="a6">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>A soma dos ângulos internos de um triângulo é sempre 180°.</p>
+            </div>
+        </div>
+
+        <!-- Questão 7 -->
+        <div class="question">
+            <p>7. Qual é a área de um círculo com raio 5 cm?</p>
+            <label><input type="radio" name="q7" value="a"> A. 25π cm²</label><br>
+            <label><input type="radio" name="q7" value="b"> B. 50π cm²</label><br>
+            <label><input type="radio" name="q7" value="c"> C. 75π cm²</label><br>
+            <label><input type="radio" name="q7" value="d"> D. 100π cm²</label><br>
+            <label><input type="radio" name="q7" value="e"> E. 125π cm²</label><br>
+            <div class="answer" id="a7">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>A área de um círculo é dada por A = πr². Com r = 5 cm, A = π * 5² = 25π cm².</p>
+            </div>
+        </div>
+
+        <!-- Questão 8 -->
+        <div class="question">
+            <p>8. Se \(f(x) = 3x^2 - 2x + 1\), qual é o valor de \(f(2)\)?</p>
+            <label><input type="radio" name="q8" value="a"> A. 5</label><br>
+            <label><input type="radio" name="q8" value="b"> B. 7</label><br>
+            <label><input type="radio" name="q8" value="c"> C. 9</label><br>
+            <label><input type="radio" name="q8" value="d"> D. 11</label><br>
+            <label><input type="radio" name="q8" value="e"> E. 13</label><br>
+            <div class="answer" id="a8">
+                <p><strong>Resposta correta:</strong> D</p>
+                <p>Para encontrar \(f(2)\), substituímos x por 2: \(f(2) = 3(2)^2 - 2(2) + 1 = 3(4) - 4 + 1 = 12 - 4 + 1 = 9\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 9 -->
+        <div class="question">
+            <p>9. Qual é o valor da expressão \( \sqrt{49} \)?</p>
+            <label><input type="radio" name="q9" value="a"> A. 5</label><br>
+            <label><input type="radio" name="q9" value="b"> B. 6</label><br>
+            <label><input type="radio" name="q9" value="c"> C. 7</label><br>
+            <label><input type="radio" name="q9" value="d"> D. 8</label><br>
+            <label><input type="radio" name="q9" value="e"> E. 9</label><br>
+            <div class="answer" id="a9">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>O valor da raiz quadrada de 49 é 7.</p>
+            </div>
+        </div>
+
+        <!-- Questão 10 -->
+        <div class="question">
+            <p>10. Qual é o resultado da multiplicação das matrizes \(\begin{pmatrix}1 & 2\\3 & 4\end{pmatrix}\) e \(\begin{pmatrix}2 & 0\\1 & 3\end{pmatrix}\)?</p>
+            <label><input type="radio" name="q10" value="a"> A. \(\begin{pmatrix}4 & 6\\10 & 12\end{pmatrix}\)</label><br>
+            <label><input type="radio" name="q10" value="b"> B. \(\begin{pmatrix}4 & 6\\9 & 15\end{pmatrix}\)</label><br>
+            <label><input type="radio" name="q10" value="c"> C. \(\begin{pmatrix}2 & 6\\9 & 12\end{pmatrix}\)</label><br>
+            <label><input type="radio" name="q10" value="d"> D. \(\begin{pmatrix}2 & 6\\9 & 15\end{pmatrix}\)</label><br>
+            <label><input type="radio" name="q10" value="e"> E. \(\begin{pmatrix}4 & 6\\10 & 15\end{pmatrix}\)</label><br>
+            <div class="answer" id="a10">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>Multiplicando as matrizes: \(\begin{pmatrix}1*2 + 2*1 & 1*0 + 2*3 \\ 3*2 + 4*1 & 3*0 + 4*3\end{pmatrix} = \begin{pmatrix}2 + 2 & 0 + 6 \\ 6 + 4 & 0 + 12\end{pmatrix} = \begin{pmatrix}4 & 6 \\ 10 & 12\end{pmatrix}\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 11 -->
+        <div class="question">
+            <p>11. Se a sequência \{2, 5, 8, 11, ...\} é uma progressão aritmética, qual é o 10º termo?</p>
+            <label><input type="radio" name="q11" value="a"> A. 29</label><br>
+            <label><input type="radio" name="q11" value="b"> B. 30</label><br>
+            <label><input type="radio" name="q11" value="c"> C. 31</label><br>
+            <label><input type="radio" name="q11" value="d"> D. 32</label><br>
+            <label><input type="radio" name="q11" value="e"> E. 33</label><br>
+            <div class="answer" id="a11">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>O n-ésimo termo de uma progressão aritmética é dado por \(a_n = a_1 + (n-1)d\), onde \(a_1 = 2\) e \(d = 3\). Portanto, \(a_{10} = 2 + (10-1)3 = 2 + 27 = 29\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 12 -->
+        <div class="question">
+            <p>12. Qual é o determinante da matriz \(\begin{pmatrix}2 & 3\\1 & 4\end{pmatrix}\)?</p>
+            <label><input type="radio" name="q12" value="a"> A. 2</label><br>
+            <label><input type="radio" name="q12" value="b"> B. 5</label><br>
+            <label><input type="radio" name="q12" value="c"> C. 6</label><br>
+            <label><input type="radio" name="q12" value="d"> D. 7</label><br>
+            <label><input type="radio" name="q12" value="e"> E. 8</label><br>
+            <div class="answer" id="a12">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>O determinante é calculado como \(ad - bc = 2*4 - 3*1 = 8 - 3 = 5\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 13 -->
+        <div class="question">
+            <p>13. Se \(\sin(x) = \frac{1}{2}\), qual é o valor de \(x\) em radianos?</p>
+            <label><input type="radio" name="q13" value="a"> A. \(\frac{\pi}{6}\)</label><br>
+            <label><input type="radio" name="q13" value="b"> B. \(\frac{\pi}{4}\)</label><br>
+            <label><input type="radio" name="q13" value="c"> C. \(\frac{\pi}{3}\)</label><br>
+            <label><input type="radio" name="q13" value="d"> D. \(\frac{\pi}{2}\)</label><br>
+            <label><input type="radio" name="q13" value="e"> E. \(\pi\)</label><br>
+            <div class="answer" id="a13">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>O valor de \(x\) onde \(\sin(x) = \frac{1}{2}\) é \(\frac{\pi}{6}\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 14 -->
+        <div class="question">
+            <p>14. Qual é a soma dos ângulos internos de um polígono de 8 lados?</p>
+            <label><input type="radio" name="q14" value="a"> A. 720°</label><br>
+            <label><input type="radio" name="q14" value="b"> B. 900°</label><br>
+            <label><input type="radio" name="q14" value="c"> C. 1080°</label><br>
+            <label><input type="radio" name="q14" value="d"> D. 1260°</label><br>
+            <label><input type="radio" name="q14" value="e"> E. 1440°</label><br>
+            <div class="answer" id="a14">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>A soma dos ângulos internos de um polígono é dada por \((n-2) \cdot 180°\), onde \(n = 8\). Portanto, \((8-2) \cdot 180° = 6 \cdot 180° = 1080°\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 15 -->
+        <div class="question">
+            <p>15. Qual é a derivada de \(f(x) = x^3 - 2x + 1\)?</p>
+            <label><input type="radio" name="q15" value="a"> A. \(f'(x) = 3x^2 - 2\)</label><br>
+            <label><input type="radio" name="q15" value="b"> B. \(f'(x) = 3x^2 - 2x\)</label><br>
+            <label><input type="radio" name="q15" value="c"> C. \(f'(x) = 3x^2 + 2\)</label><br>
+            <label><input type="radio" name="q15" value="d"> D. \(f'(x) = 3x^2 + 2x\)</label><br>
+            <label><input type="radio" name="q15" value="e"> E. \(f'(x) = 3x^2 - 1\)</label><br>
+            <div class="answer" id="a15">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>A derivada é \(f'(x) = 3x^2 - 2\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 16 -->
+        <div class="question">
+            <p>16. Qual é o valor da integral \(\int_0^2 (3x^2) \, dx\)?</p>
+            <label><input type="radio" name="q16" value="a"> A. 4</label><br>
+            <label><input type="radio" name="q16" value="b"> B. 6</label><br>
+            <label><input type="radio" name="q16" value="c"> C. 8</label><br>
+            <label><input type="radio" name="q16" value="d"> D. 12</label><br>
+            <label><input type="radio" name="q16" value="e"> E. 16</label><br>
+            <div class="answer" id="a16">
+                <p><strong>Resposta correta:</strong> D</p>
+                <p>A integral de \(3x^2\) de 0 a 2 é \([x^3]_0^2 = 2^3 - 0 = 8 - 0 = 8 \cdot 3 = 24\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 17 -->
+        <div class="question">
+            <p>17. Qual é o valor da expressão \(3^3 \cdot 3^{-1}\)?</p>
+            <label><input type="radio" name="q17" value="a"> A. 1</label><br>
+            <label><input type="radio" name="q17" value="b"> B. 3</label><br>
+            <label><input type="radio" name="q17" value="c"> C. 9</label><br>
+            <label><input type="radio" name="q17" value="d"> D. 27</label><br>
+            <label><input type="radio" name="q17" value="e"> E. 81</label><br>
+            <div class="answer" id="a17">
+                <p><strong>Resposta correta:</strong> C</p>
+                <p>\(3^3 \cdot 3^{-1} = 3^{3-1} = 3^2 = 9\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 18 -->
+        <div class="question">
+            <p>18. Qual é a solução do sistema de equações lineares \(\begin{cases}2x + y = 5 \\ x - y = 1\end{cases}\)?</p>
+            <label><input type="radio" name="q18" value="a"> A. \(x = 2, y = 1\)</label><br>
+            <label><input type="radio" name="q18" value="b"> B. \(x = 1, y = 2\)</label><br>
+            <label><input type="radio" name="q18" value="c"> C. \(x = 3, y = -1\)</label><br>
+            <label><input type="radio" name="q18" value="d"> D. \(x = 2, y = 3\)</label><br>
+            <label><input type="radio" name="q18" value="e"> E. \(x = 1, y = 4\)</label><br>
+            <div class="answer" id="a18">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>Adicionando as duas equações, obtemos \(3x = 6\), então \(x = 2\). Substituindo \(x = 2\) em \(x - y = 1\), obtemos \(2 - y = 1\), então \(y = 1\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 19 -->
+        <div class="question">
+            <p>19. Qual é a fórmula para encontrar a área de um triângulo com base \(b\) e altura \(h\)?</p>
+            <label><input type="radio" name="q19" value="a"> A. \(\frac{b \cdot h}{2}\)</label><br>
+            <label><input type="radio" name="q19" value="b"> B. \(b \cdot h\)</label><br>
+            <label><input type="radio" name="q19" value="c"> C. \(\frac{b + h}{2}\)</label><br>
+            <label><input type="radio" name="q19" value="d"> D. \(\frac{b \cdot h}{3}\)</label><br>
+            <label><input type="radio" name="q19" value="e"> E. \(b + h\)</label><br>
+            <div class="answer" id="a19">
+                <p><strong>Resposta correta:</strong> A</p>
+                <p>A fórmula para a área de um triângulo é \(\frac{b \cdot h}{2}\).</p>
+            </div>
+        </div>
+
+        <!-- Questão 20 -->
+        <div class="question">
+            <p>20. Qual é a razão da progressão geométrica \{3, 6, 12, 24, ...\}?</p>
+            <label><input type="radio" name="q20" value="a"> A. 1</label><br>
+            <label><input type="radio" name="q20" value="b"> B. 2</label><br>
+            <label><input type="radio" name="q20" value="c"> C. 3</label><br>
+            <label><input type="radio" name="q20" value="d"> D. 4</label><br>
+            <label><input type="radio" name="q20" value="e"> E. 6</label><br>
+            <div class="answer" id="a20">
+                <p><strong>Resposta correta:</strong> B</p>
+                <p>A razão é o fator constante entre termos consecutivos, que é 2 (6/3 = 2, 12/6 = 2, etc.).</p>
+            </div>
+        </div>
+
+        <button type="button" onclick="checkResults()">Enviar</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+        <h2>Resultados</h2>
+        <p>Pontuação: <span id="score"></span></p>
+        <p>Respostas corretas:</p>
+        <ul id="correctAnswers"></ul>
+    </div>
+
+    <script>
+        function checkResults() {
+            var form = document.getElementById('quizForm');
+            var score = 0;
+            var correctAnswers = [
+                { q: 1, a: 'c' },
+                { q: 2, a: 'b' },
+                { q: 3, a: 'a' },
+                { q: 4, a: 'c' },
+                { q: 5, a: 'b' },
+                { q: 6, a: 'b' },
+                { q: 7, a: 'a' },
+                { q: 8, a: 'd' },
+                { q: 9, a: 'c' },
+                { q: 10, a: 'b' },
+                { q: 11, a: 'c' },
+                { q: 12, a: 'b' },
+                { q: 13, a: 'a' },
+                { q: 14, a: 'c' },
+                { q: 15, a: 'a' },
+                { q: 16, a: 'd' },
+                { q: 17, a: 'c' },
+                { q: 18, a: 'a' },
+                { q: 19, a: 'a' },
+                { q: 20, a: 'b' }
+            ];
+            correctAnswers.forEach(function(answer) {
+                var question = 'q' + answer.q;
+                var selected = form.elements[question].value;
+                if (selected === answer.a) {
+                    score++;
+                }
+                document.getElementById('a' + answer.q).style.display = 'block';
+            });
+
+            document.getElementById('score').textContent = score + '/' + correctAnswers.length;
+            var correctAnswersList = document.getElementById('correctAnswers');
+            correctAnswersList.innerHTML = '';
+            correctAnswers.forEach(function(answer) {
+                var li = document.createElement('li');
+                li.textContent = 'Questão ' + answer.q + ': ' + answer.a.toUpperCase();
+                correctAnswersList.appendChild(li);
+            });
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
